@@ -358,49 +358,77 @@ header {
 
 .dashboard p {
     font-size: 18px;
+    flex-direction: row;
 }
 
 /* Container for map and right-side tables */
-.map-and-right-tables {
-    display: flex;
-    align-items: flex-start; /* Align tables with the top of the map */
-    justify-content: space-between; /* Ensure space between map and tables on the right */
-    margin-bottom: 20px;
-    width: 100%; /* Full width of the container */
-    gap:-100px;
-}
 
 /* Map container */
 .map {
     
-    height: 425px;
+    height: 400px;
     width: 900px; /* Adjust map size */
     background-color: #f2f2f2; /* Placeholder for the map */
     margin-top: -50px;
-}
-
-/* Container for the right-side tables (Tables 3 and 4) */
-.right-tables {
+    margin-left: px;
     display: flex;
-    /*justify-content: space-between;  Ensure tables are evenly spaced */
-    width: 50%;
-    height:40px ;
-    margin-top: 60px; /* Space between map section and bottom tables */
-    flex-direction: column;
+    align-items: flex-start; /* Align tables with the top of the map */
+    justify-content: space-between; /* Ensure space between map and tables on the right */
+    margin-bottom: 20px;
+    /*width: 100%;  Full width of the container */
+    gap:-50px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Background color */
+}
+
+
+
+.right-box {
+    /* flex: 0 0 300px; Fixed width of 300px */
+    width: 450px;
+    height: 400px;
+    background-color: #e4e2e3;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    margin-top: -620px;
+    margin-left: 920px;
     
     
 }
 
-/* General table styling */
+h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type:none;
+    font-family:'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style:initial;
+    padding: 0;
+    margin-top: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+/* General table styling 
 table {
     border-collapse: collapse;
     font-family: Arial, sans-serif;
     width: 50px;
     height: 0px;
     margin-bottom: 20px; /* Add space between tables */
-}
 
-/* Styling for individual tables */
+/* Styling for individual tables 
 th, td {
     border: 1px solid #ddd;
     padding: 7px;
@@ -410,25 +438,106 @@ th {
     background-color: #f2f2f2;
     text-align: left;
 }
+Container for the bottom tables (Tables 1 and 2) */
 
-/* Container for the bottom tables (Tables 1 and 2) */
-.bottom-tables {
-    display: flex;
-    flex-direction:row-reverse;  /*Stack the tables in row layout */
-    gap:px;/* Space between map section and bottom tables */
-    margin-top: 20px;
+.bottom-box1 {
+    width: 900px;
+    height: 200px;
+    background-color: #e4e2e3;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    flex-direction: row;
+    /*margin-top: -675px;
+    margin-left: 950px;*/
+    
+}
+.parameters-table {
+    width: 700px;
+    border-collapse: collapse; /* Ensures table looks clean */
+    margin-top: 10px;
+    border: none;
     
 }
 
+.parameters-table td {
+    padding: 22px 70px; /* Adds padding */
+    font-size: 16px;
+    font-weight: bold;
+    text-align:start;
+    border: none;
+}
 
-/* Table widths for right tables */
+.parameters-table tr td:first-child {
+    font-weight: bold;
+    width: 100px; /* Sets width for the first column */
+}
+
+.parameters-table td {
+    width: 70px; /* Sets width for the other cells */
+}
+
+.bottom-box2 {
+    width: 450px;
+    height: 200px;
+    background-color: #e4e2e3;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -200px;
+    margin-left: 920px;
+    
+}
+.parameters-table2 {
+    width: 450px;
+    height: 200px;
+    /*padding: -500px 250px;*/
+    border-collapse: separate; /* Ensures table looks clean */
+    margin-top: -5px;
+    margin-left: 0px;
+    border-left: 0px;
+    border: none;    
+}
+
+.parameters-table2 td {
+    padding: 5px;
+    grid-gap: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align:center;
+    
+    border: none;
+
+}
+
+.parameters-table2 tr td:first-child {
+    font-weight: bold;
+    padding: 0px;
+    width: 0px; /* Sets width for the first column */
+}
+
+.parameters-table2 td {
+    width: 0px;
+    padding:2px;
+ /* Sets width for the other cells */
+}
+.parameters-table2 img{
+    max-width: 35px; /* Adjust the width of the image */
+    height: auto;
+}
+
+
+/* Table widths for right tables
 .table1, .table2, .table5 {
     width:450px;
     height: 20px;
    
-}
+} */
 
-/*bottom tables*/
+/*bottom tables
 .table3 {
     width: 450px;
     height:50px;
@@ -440,7 +549,7 @@ th {
     width: 450px;
     height:50px;
     
-}
+}*/
 
 
 /* Services content styling */
